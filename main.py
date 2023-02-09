@@ -45,7 +45,7 @@ alive = True
 tail = []
 
 # Define the initial red circle position
-red_circle_position = (random.randint(0, width/2), random.randint(0, height/2))
+red_circle_position = (random.randint(10, width/2), random.randint(10, height/2))
 
 # Run the game loop
 
@@ -98,7 +98,7 @@ while running:
             if (speed<150):
                 speed+=1
             tail.append((circle_center[0], circle_center[1]))
-            red_circle_position = (random.randint(0, width-15), random.randint(0, height-15))
+            red_circle_position = (random.randint(10, width-15), random.randint(10, height-15))
 
         #Ending when collapsing with walls
         if(circle_center[0]> width - radius  or circle_center[0] < 0 + radius or circle_center[1]> width - radius  or circle_center[1] < 0 + radius):
